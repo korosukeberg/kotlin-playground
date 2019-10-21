@@ -1,3 +1,5 @@
+import java.nio.charset.IllegalCharsetNameException
+
 fun main() {
 
     //let
@@ -22,4 +24,14 @@ fun main() {
     }
     println(ddd)
 
+    //apply
+    println(Sample().apply {
+        name = "Steve"
+        age = 11
+    })
+}
+
+class Sample {
+    var name: String = ""
+    var age: Int = 0
 }
